@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Restaurant XYZ</title>
+    <script src="script.js" ></script>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Nos Plats</a></li>
+            <li><a href="contat.html">Contactez Nous</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="section">
+        <h1>Bienvenue chez Restaurant XYZ</h1>
+        <p>Découvrez notre délicieux menu et réservez une table pour une expérience culinaire exceptionnelle.</p>
+
+        <!-- Special Offer -->
+        <div class="special-offer">
+            <marquee behavior="scroll" direction="left">Réservez maintenant et obtenez 10% de réduction!</marquee>
+        </div>
+
+        <!-- Video Section -->
+        <div class="video-section">
+            <video width="100%" height="auto" autoplay muted controls>
+                <source src="img/food.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <!-- Menu Section -->
+        <section id="menu" class="section">
+            <h1>Nos Délicieux Plats</h1>
+            <div class="image-gallery">
+                <img src="img/1.jpg" alt="Plat 1">
+                <img src="img/2.jpg" alt="Plat 2">
+                <img src="img/3.jpg" alt="Plat 3">
+                <img src="img/4.jpg" alt="Plat 4">
+                <img src="img/7.jpg" alt="Plat 7">
+                <img src="img/8.jpg" alt="Plat 8">
+            </div>
+        </section>
+
+        <!-- Specialty Gallery -->
+        <div class="menu-list">
+            <h2>Nos Spécialités</h2>
+            <div class="gallery">
+                <button class="gallery-btn" onclick="changeSpecialty(+1)">Suivant</button>
+                <div class="gallery-content">
+                    <div class="specialty-item">
+                        <img src="img/1.jpg" alt="Coq au Vin" class="specialty-image">
+                        <div class="specialty-info">
+                            <strong>Coq au Vin</strong>
+                        </div>
+                    </div>
+                    <div class="specialty-item">
+                        <img src="img/2.jpg" alt="Ratatouille" class="specialty-image">
+                        <div class="specialty-info">
+                            <strong>Ratatouille</strong>
+                        </div>
+                    </div>
+                    <div class="specialty-item">
+                        <img src="img/3.jpg" alt="Bœuf Bourguignon" class="specialty-image">
+                        <div class="specialty-info">
+                            <strong>Bœuf Bourguignon</strong>
+                        </div>
+                    </div>
+                    <div class="specialty-item">
+                        <img src="img/4.jpg" alt="Quiche Lorraine" class="specialty-image">
+                        <div class="specialty-info">
+                            <strong>Quiche Lorraine</strong>
+                        </div>
+                    </div>
+                    <div class="specialty-item">
+                        <img src="img/7.jpg" alt="Tarte Tatin" class="specialty-image">
+                        <div class="specialty-info">
+                            <strong>Tarte Tatin</strong>
+                        </div>
+                    </div>
+                </div>
+                <button class="gallery-btn" onclick="changeSpecialty(1)">Suivant</button>
+            </div>
+        </div>
+
+        <!-- Reservation Form -->
+        <button onclick="showReservationForm()">Réservez une table</button>
+        <div id="reservationForm" style="display: none;">
+            <form id="reservationForm">
+                <label for="name">Nom :</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="phone">Téléphone :</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="date">Date :</label>
+                <input type="date" id="date" name="date" required>
+
+                <button type="button" onclick="submitReservation()">Réserver</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="section">
+        <h2>Processus du service</h2>
+        <div class="process-steps">
+            <div class="process-step" onmouseover="highlightNumber(1)" onmouseout="unhighlightNumber(1)">
+                <p class="step-number">1</p>
+                <p>Passer la commande</p>
+                <p>Sélectionnez le type de forfait que vous souhaitez et commandez-le</p>
+            </div>
+            <div class="process-step" onmouseover="highlightNumber(2)" onmouseout="unhighlightNumber(2)">
+                <p class="step-number">2</p>
+                <p>Personnalisation</p>
+                <p>Sélectionnez le type de forfait que vous souhaitez et commandez-le</p>
+            </div>
+            <div class="process-step" onmouseover="highlightNumber(3)" onmouseout="unhighlightNumber(3)">
+                <p class="step-number">3</p>
+                <p>Faire ton choix Livraison</p>
+                <p>Votre plat est prêt à portée</p>
+            </div>
+            <div class="process-step" onmouseover="highlightNumber(4)" onmouseout="unhighlightNumber(4)">
+                <p class="step-number">4</p>
+                <p>Paiement</p>
+                <p>Choisir la méthode de paiement souhaitée</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Aside Section -->
+    <aside class="section" id="aside-section">
+        <h2>Informations complémentaires</h2>
+        <p>Cette section contient des informations supplémentaires sur notre restaurant. Nous sommes fiers de vous offrir une expérience culinaire exceptionnelle, mettant en valeur des ingrédients frais et des recettes créatives.</p>
+    </aside>
+
+    <!-- Article Section -->
+    <article class="section" id="article-section">
+        <h2>Article à propos de notre cuisine</h2>
+        <p>Découvrez l'histoire et les détails fascinants derrière nos plats et notre cuisine unique. Notre chef talentueux combine tradition et innovation pour vous offrir des saveurs inoubliables.</p>
+    </article>
+
+    <!-- Liste Numérotée Section -->
+    <section class="section" id="numbered-list-section">
+        <h2>Liste Numérotée</h2>
+        <ol>
+            <li>Nous utilisons des ingrédients locaux de première qualité.</li>
+            <li>Nos plats sont préparés avec passion et dévouement.</li>
+            <li>L'ambiance chaleureuse de notre restaurant vous invite à vous détendre.</li>
+            <li>Chaque plat est une invitation à un voyage culinaire unique.</li>
+        </ol>
+    </section>
+
+    <!-- Liste Non Numérotée Section -->
+    <section class="section" id="bulleted-list-section">
+        <h2>Liste Non Numérotée</h2>
+        <ul>
+            <li>Explorez notre menu varié pour satisfaire toutes vos envies.</li>
+            <li>Détendez-vous dans notre atmosphère accueillante et élégante.</li>
+            <li>Découvrez des saveurs authentiques préparées avec expertise.</li>
+            <li>Rejoignez-nous pour des moments délicieux et mémorables.</li>
+        </ul>
+    </section>
+
+    <!-- Tableau Section -->
+    <section class="section" id="table-section">
+        <h2>Tableau</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Plat</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Coq au Vin</td>
+                    <td>Poulet mijoté dans du vin rouge avec des légumes et des herbes.</td>
+                </tr>
+                <tr>
+                    <td>Ratatouille</td>
+                    <td>Mélange de légumes méditerranéens cuits lentement.</td>
+                </tr>
+                <tr>
+                    <td>Bœuf Bourguignon</td>
+                    <td>Bœuf braisé dans du vin rouge avec des champignons et des oignons.</td>
+                </tr>
+                <tr>
+                    <td>Quiche Lorraine</td>
+                    <td>Tarte salée aux œufs, crème fraîche et lardons.</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Ton meilleur guide</h3>
+                <p>Explorez notre site pour découvrir les dernières offres et événements.</p>
+            </div>
+            <div class="footer-section">
+                <h4>PAGES</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Nos Plats</a></li>
+                    <li><a href="contat.html">Contactez Nous</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>OBJECTIFS</h4>
+                <ul>
+                    <li>Perte du poids</li>
+                    <li>Maintien du poids</li>
+                    <li>Gain du poids</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>NOUS SUIVRE SUR</h4>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                   
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

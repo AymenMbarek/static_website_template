@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Restaurant XYZ - Contactez Nous</title>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Nos Plats</a></li>
+            <li><a href="#contact">Contactez Nous</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h1>Contactez Nous</h1>
+        <p>Utilisez le formulaire ci-dessous pour nous envoyer un message :</p>
+        <form id="contactForm">
+            <label for="name">Nom :</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="button" onclick="submitContactForm()">Envoyer</button>
+        </form>
+    </section>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+<footer>
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>Ton meilleur guide</h3>
+        </div>
+        <div class="footer-section">
+            <h4>PAGES</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+             <li><a href="menu.html">Nos Plats</a></li>
+              <li><a href="contat.html">Contactez Nous</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h4>OBJECTIFS</h4>
+            <ul>
+                <li>Perte du poids</li>
+                <li>Maintien du poids</li>
+                <li>Gain du poids</li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>NOUS SUIVRE SUR</h4>
+            <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <!-- Ajoutez d'autres liens sociaux si nécessaire -->
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; All rights reserved.</p>
+    </div>
+</footer>
+</body>
+
+</html>

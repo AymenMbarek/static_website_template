@@ -1,0 +1,266 @@
+/* Add your styles here */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+     font-weight: bold;
+}
+
+nav {
+    background-color: #333;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.section {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.special-offer {
+    background-color: #f8d7da;
+    padding: 10px;
+    margin: 20px 0;
+}
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.image-gallery img {
+    max-width: 30%;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.menu-list {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.menu-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-list li {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+}
+
+.video-section {
+    position: relative;
+
+}
+
+.video-section video {
+    width: 100%;
+    height: auto;
+}
+
+/* Add your styles here */
+.specialties-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.specialty-item {
+    text-align: center;
+    margin: 10px;
+}
+
+.specialty-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.specialty-info {
+    margin-top: 8px;
+}
+/* Ajoutez vos styles ici */
+.gallery {
+    position: relative;
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+.gallery-content {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.specialty-item {
+    flex: 0 0 100%;
+    text-align: center;
+    position: relative; /* Ajout de cette ligne */
+}
+
+.specialty-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-btn {
+    position: absolute;
+    bottom: 10px; /* Ajustez cette valeur selon votre préférence */
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 18px;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.gallery-btn:hover {
+    background-color: #0056b3;
+}
+/* Ajoutez vos styles ici */
+
+
+
+.image-gallery img:hover {
+    transform: scale(1.1);
+}
+
+
+
+.specialty-item img:hover {
+    transform: scale(1.1);
+}
+
+/* Ajoutez vos styles ici */
+.process-steps {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.process-step {
+    text-align: center;
+    margin-bottom: 20px;
+    width: 45%;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.process-step:hover {
+    background-color: grey; /* Couleur de survol */
+}
+
+.step-number {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+/* Ajoutez vos styles ici */
+
+footer {
+    background-color: #f0f0f0; /* Gris clair */
+    padding: 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    color: #333; /* Couleur du texte */
+}
+
+.footer-section {
+    width: 25%;
+}
+
+.footer-section h3,
+.footer-section h4 {
+    font-weight: bold;
+    color: #555; /* Couleur du titre */
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+.footer-section a {
+    text-decoration: none;
+    color: #007bff; /* Couleur du lien */
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-section a:hover {
+    color: #0056b3; /* Couleur du lien au survol */
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    text-align: center;
+    color: #888; /* Couleur du texte en bas */
+}
